@@ -1,6 +1,6 @@
 import Me from './Me.svelte';
-import Motion from './Motion.svelte';
-import Artist from './Artist.svelte';
+import Game from './Game.svelte';
+import Freelance from './Freelance.svelte';
 import Developer from './Developer.svelte';
 import Contact from './Contact.svelte';
 
@@ -13,8 +13,8 @@ export type Section = {
 const sections: Section[] = [
 	{ component: Me, title: 'About' },
 	{ component: Developer, prefix: 'a', title: 'Experience' },
-	{ component: Motion, prefix: 'a', title: 'Motion' },
-	{ component: Artist, prefix: 'an', title: 'Art' },
+	{ component: Game, prefix: 'a', title: 'Game' },
+	{ component: Freelance, prefix: 'a', title: 'Freelance' },
 	{ component: Contact, title: 'Contact' }
 ];
 

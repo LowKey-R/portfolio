@@ -9,8 +9,8 @@
 	const links = [
 		['Home', '/'],
 		['About', '/about'],
-		['Motion Work', '/motion'],
-		['Art', '/art'],
+		['Game', '/game'],
+		['Freelance', '/freelance'],
 		['Experience', '/experience'],
 		['Projects', '/projects'],
 		['Contact', '/contact']

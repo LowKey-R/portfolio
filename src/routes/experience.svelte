@@ -15,19 +15,13 @@
 		'C/C++',
 		'SQL',
 		'NoSQL',
-		'Bash'
+		'Dart'
 	];
 	const libs = [
 		['React', 'https://reactjs.org/'],
-		['Next.js', 'https://nextjs.org/'],
 		['Node.js', 'https://nodejs.org/en/'],
 		['Svelte', 'https://svelte.dev/'],
-		['Sapper', 'https://sapper.svelte.dev/'],
-		['Angular', 'https://angular.io/'],
-		['Redux', 'https://redux.js.org/'],
-		['Jest', 'https://jestjs.io/en/'],
-		['Selenium', 'https://www.selenium.dev/'],
-		['SASS', 'https://sass-lang.com/'],
+		['Flutter', 'https://flutter.dev/'],
 		['And so many more...', undefined]
 	];
 	const tools = [
@@ -36,10 +30,7 @@
 		['Yarn', 'https://classic.yarnpkg.com/en/'],
 		['Figma', 'https://www.figma.com/'],
 		['Vercel', 'https://vercel.com/'],
-		['Jira', 'https://www.atlassian.com/software/jira'],
-		['Illustrator', 'https://www.adobe.com/products/illustrator.html'],
-		['After Effects', 'https://www.adobe.com/products/aftereffects.html'],
-		['Blender', 'https://www.blender.org/'],
+		['After Photoshop', 'https://www.adobe.com/products/photoshop.html'],
 		['MacOs', undefined],
 		['Windows', undefined],
 		['Linux', undefined]
@@ -75,34 +66,64 @@
 <h1>Experience</h1>
 
 <PageSection
-	heading="Vimeo"
-	subHeading="Senior Frontend Platform Engineer"
-	detail="Mar 2019 — Current"
+	heading="PT. Jerbee Indonesia"
+	subHeading="Internship"
+	detail="End of June 2018 — September 2018"
 >
 	<p>
+		Due to the need to fulfill the assessment from the school, I did an internship for 3 months at PT. Jerbee Indonesia.
 		As a platform engineer my main responsibilities consist of building out tools and architecture
 		to optimize and support the workflow of teams across our core SAAS applications.
 	</p>
 	<p>
-		Because of the nature of touching so many parts of our stack I also spend much of my time
-		interfacing with teams throughout the company to collaborate and problem solve engineering and
-		design issues that may arise on a day to day basis.
+		From here I began to explore and learn more about programming because this is also my first experience in practical work.
 	</p>
-	<p>Technologies: Javascript, Typescript, React, PHP, Next.js</p>
+	<p><b>Technologies</b>: SQL · Flutter · HTML</p>
 </PageSection>
 <PageSection
-	heading="Fidelity Investments"
-	subHeading="Software Engineer"
-	detail="Sep 2017 — Mar 2019"
+	heading="Lontarlab"
+	subHeading="Junior Programmer"
+	detail="April 2019 — July 2020"
+>
+	<p>
+	Started working as a Junior Programmer which at that time I started looking for new work experience in a team at Lontarlab.
+	</p>
+	<p>
+		Focusing more on the front-end engineer designing the front view of a mobile application.
+	</p>
+	<p><b>Technologies</b>: Git · Firebase · Cloud Firestore · Google Cloud Platform (GCP) · Flutter · Trello</p>
+</PageSection>
+<PageSection
+	subHeading="Senior Programmer"
+	detail="July 2020 — June 2022"
 >
 	<p>
 		Full stack developer on several large scale customer facing applications with a focus on
 		creating easy to use and intuitive experiences to reduce user frustration and call volume.
 	</p>
 	<p>
-		My work involved multiple different technologies including: javascript, node, angular, ember,
-		sass, handlebars, and a plethora of internal toolling.
+		My work involved multiple different technologies including: javascript, node, flutter, gcp,
+		firestore, cloud function, and trello for Project Management.
 	</p>
+	<p><b>Technologies</b>: GitHub · Python · React.js · React.ts · Git · Firebase · Cloud Firestore · Google Cloud Platform (GCP) · SQL · Flutter · Trello · Java</p>
+</PageSection>
+<PageSection
+	subHeading="UI/UX Designer"
+	detail="July 2020 — June 2022"
+>
+	<p>
+		Appointed and mandated more as a developer of UI/UX innovation in Thawaf products at Lontarlab
+	</p>
+	<p><b>Technologies</b>: Mobile Design · Figma · Adobe Photoshop</p>
+</PageSection>
+<PageSection
+	subHeading="Head of Application Development"
+	detail="July 2020 — Present"
+>
+	<p>
+		Being Head of Application Development for Thawaf Application in Lontarlab
+	</p>
+	<p><b>Skills</b>: Software Project Management · Scrum · Software Development</p>
 </PageSection>
 
 <hr />
@@ -129,12 +150,23 @@
 <h1>Education</h1>
 
 <PageSection
-	heading="The University of North Carolina at Chapel Hill"
-	subHeading="Bachelor of Arts in Computer Science"
-	detail="May 2017"
+	heading="Sekolah Tinggi Teknologi"
+	subHeading="Bachelor's in Software Engineering"
+	detail="Kota Bandung"
 />
 <PageSection
-	heading="Rowan Cabarrus Community College"
-	subHeading="Associates in Science"
-	detail="May 2015"
+	heading="SMK Negeri 2 Kota Sukabumi"
+	subHeading="High School"
+	detail="Kota Sukabumi"
 />
+<PageSection
+	heading="SMP Negeri 8 Kota Sukabumi"
+	subHeading="Junior High School"
+	detail="Kota Sukabumi"
+/>
+<PageSection
+	heading="SD Negeri Lamping 3"
+	subHeading="Elementary School"
+	detail="Kota Sukabumi"
+/>
+

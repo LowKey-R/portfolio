@@ -19,10 +19,10 @@
 </svelte:head>
 
 <h1>About</h1>
-<p>Hey I'm Rifky Abdul Hanan, a motion designer and software developer based in Queens, NY.</p>
+<p>Hey I'm Rifky Abdul Hanan, Software Developer based in Bandung, ID.</p>
 
 <p>
-	Currently working as a frontend engineer at Vimeo and doing freelance animation and motion design.
+	Currently working as a Full Stack Developer at Lontarlab and doing freelance as a web designer.
 	I'm incredibly passionate about combining art and technology and finding creative solutions to
 	weird and odd problems.
 </p>
