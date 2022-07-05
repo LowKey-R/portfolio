@@ -1,6 +1,6 @@
 import type { RequestHandler } from '@sveltejs/kit';
 export const get: RequestHandler = async () => {
-	const res = await fetch('https://api.imgur.com/3/account/qdozaq/submissions/0/', {
+	const res = await fetch('https://api.imgur.com/3/account/lowkey/submissions/0/', {
 		headers: { Authorization: `Client-ID ${import.meta.env.VITE_IMGUR_CLIENT_ID}` }
 	});
 
