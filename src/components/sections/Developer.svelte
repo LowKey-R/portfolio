@@ -58,7 +58,7 @@
   }
 </script>
 
-<Section title="Software Developer" {...$$props} load={true}>
+<Section title="Fullstack Developer" {...$$props} load={true}>
   <button class="content" slot="content" on:click={handleClick}>
     <code>
       {@html code}

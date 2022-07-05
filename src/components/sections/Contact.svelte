@@ -28,7 +28,8 @@
 
 <Section title="out of things to say..." {...$$props}>
 	<div class="content" slot="alt">
-		<p>Lets connect!</p>
+		<p>Let's connect!</p>
 		<SocialIcons />
+		<p style="font-size: 0.7rem; padding-top: 10px;">Made with Love by <b>Rifky</b></p>
 	</div>
 </Section>
