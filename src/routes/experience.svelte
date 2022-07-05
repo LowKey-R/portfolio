@@ -71,7 +71,7 @@
 	detail="End of June 2018 — September 2018"
 >
 	<p>
-		Due to the need to fulfill the assessment from the school, I did an internship for 3 months at PT. Jerbee Indonesia.
+		Due to the need to fulfill the assessment, I did an internship for 3 months at PT. Jerbee Indonesia.
 		As a platform engineer my main responsibilities consist of building out tools and architecture
 		to optimize and support the workflow of teams across our core SAAS applications.
 	</p>

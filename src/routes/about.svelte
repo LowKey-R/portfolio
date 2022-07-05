@@ -23,6 +23,6 @@
 
 <p>
 	Currently working as a Full Stack Developer at Lontarlab and doing freelance as a web designer.
-	I'm incredibly passionate about combining art and technology and finding creative solutions to
+	I'm incredibly passionate about combining new idea and technology and finding creative solutions to
 	weird and odd problems.
 </p>
