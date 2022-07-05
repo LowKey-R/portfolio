@@ -1,50 +1,28 @@
 <script context="module">
-  import { browser, dev } from '$app/env';
-
-  // we don't need any JS on this page, though we'll load
-  // it in dev so that we get hot module replacement...
-  export const hydrate = dev;
-
-  // ...but if the client-side router is already loaded
-  // (i.e. we came here from elsewhere in the app), use it
-  export const router = browser;
-
-  // since there's no dynamic data here, we can prerender
-  // it so that it gets served as a static asset in prod
-  export const prerender = true;
+	export const prerender = true;
 </script>
 
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 500;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+</style>
+
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+	<title>About</title>
+	<meta name="description" content="About page. About me. Rifky Abdul hanan. Which is me." />
 </svelte:head>
 
-<div class="content">
-  <h1>About this app</h1>
+<h1>About</h1>
+<p>Hey I'm Rifky Abdul Hanan, a motion designer and software developer based in Queens, NY.</p>
 
-  <p>
-    This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-    following into your command line and following the prompts:
-  </p>
-
-  <pre>npm init svelte</pre>
-
-  <p>
-    The page you're looking at is purely static HTML, with no client-side interactivity needed.
-    Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-    the devtools network panel and reloading.
-  </p>
-
-  <p>
-    The <a href="/todos">TODOs</a> page illustrates SvelteKit's data loading and form handling. Try using
-    it with JavaScript disabled!
-  </p>
-</div>
-
-<style>
-  .content {
-    width: 100%;
-    max-width: var(--column-width);
-    margin: var(--column-margin-top) auto 0 auto;
-  }
-</style>
+<p>
+	Currently working as a frontend engineer at Vimeo and doing freelance animation and motion design.
+	I'm incredibly passionate about combining art and technology and finding creative solutions to
+	weird and odd problems.
+</p>
