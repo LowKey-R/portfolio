@@ -5,6 +5,7 @@
 <script>
 	import PageSection from 'components/PageSection.svelte';
 	import Pill from 'components/Pill.svelte';
+	import BackToTop from "../components/BackToTop.svelte";
 
 	const languages = [
 		'Javascript',
@@ -170,3 +171,4 @@
 	detail="Kota Sukabumi"
 />
 
+<BackToTop />

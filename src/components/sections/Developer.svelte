@@ -4,23 +4,26 @@
 	import NavigationButton from '../NavigationButton.svelte';
 	import Modal from '../Model.svelte';
 	import Cat from 'icons/Cat.svelte';
-	let catFact = '';
+	let quotes = '';
+	let author = ''
 	let error = false;
 	function onClose() {
-		catFact = '';
+		quotes = '';
+		author = '';
 		error = false;
 	}
 
 	let code = Prism.highlight(
 		`
-  async function handleClick() {
-    const response =
-      await fetch(catFactApiUrl);
-    const data =
-      await response.json();
-    catFact = data.text;
-    // Click for a cat fact 😺
-  }
+    async function handleClick() {
+      const response =
+        await fetch(quotesData);
+      const data =
+        await response.json();
+	    author = data.author;
+	    quotes = data.text;
+      // Click for a  Quotes
+    }
   `,
 		Prism.languages.javascript,
 		'javascript'
@@ -34,7 +37,7 @@
 				controller.abort();
 			}, timeout);
 
-			const response = await fetch('https://cat-fact.herokuapp.com/facts/random', {
+			const response = await fetch('https://programming-quotes-api.herokuapp.com/Quotes/random', {
 				signal: controller.signal
 			});
 
@@ -44,10 +47,12 @@
 
 			const data = await response.json();
 
-			catFact = data.text;
+			quotes = data.en;
+			author = data.author;
 		} catch (e) {
-			catFact =
-				'Oh no. Something went wrong when trying to get a cat fact. Well, good thing I put this catch block in here 🧠';
+			author = 'Oh noo :('
+			quotes =
+				'Something went wrong when trying to get a programmer quotes. Well, good thing I put this catch block in here 🧠';
 			error = true;
 		}
 	}
@@ -62,7 +67,7 @@
 	.content {
 		position: relative;
 		width: inherit;
-		height: 14rem;
+		height: 12rem;
 		border: none;
 		background: none;
 		border-bottom: #fff solid 4px;
@@ -179,17 +184,13 @@
 		<NavigationButton href="/projects" seoText="My Projects">projects</NavigationButton>
 	</span>
 </Section>
-<Modal open={catFact !== ''} {onClose}>
-	<div class="fact">{catFact}</div>
+<Modal open={quotes !== '' && author !== ''} {onClose}>
+	<!-- <div class="fact"><b>{author}</b></div> -->
+	<div class="fact">{quotes}</div>
 	{#if !error}
 		<i>
 			<p class="author">
-				-
-				<a
-					href="https://alexwohlbruck.github.io/cat-facts/"
-					target="_blank"
-					rel="noopener noreferrer">alexwohlbruck.github.io/cat-facts</a
-				>
+				- <i>{author}</i>
 			</p>
 		</i>
 	{/if}
