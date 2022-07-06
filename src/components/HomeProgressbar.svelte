@@ -12,6 +12,7 @@
 	let containerHeight = 0;
 	let mounted = false;
 	let showMenu = false;
+	let selectedIndex = 0;
 
 	$: {
 		coords.set({ y: ($progress / 100) * containerHeight });
@@ -27,6 +28,7 @@
 			const pct = sectionSize * s;
 			progress.set(pct);
 			showMenu = false;
+			selectedIndex = s;
 		};
 	}
 
@@ -107,6 +109,11 @@
 		transform: translateX(-1rem);
 		color: #8f8f8f;
 		transition: opacity 0.3s var(--reaction-curve), transform 0.3s var(--reaction-curve);
+
+		&.glow {
+			text-shadow: 0 0 1px #fff;
+			color: #fff;
+		}
 	}
 
 	.menu-button {
@@ -198,7 +205,7 @@
 			<button aria-label={title} on:click={goToSection(index)}>
 				<div class="circle" />
 			</button>
-			<span class="section-title" on:click={goToSection(index)}>{title}</span>
+			<span class="{selectedIndex !== index ? 'section-title' : 'section-title glow'}" on:click={goToSection(index)}>{title}</span>
 		</div>
 	{/each}
 	<div class="circle glow" style="transform:translateY({$coords.y}px);" />

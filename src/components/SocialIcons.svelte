@@ -57,7 +57,7 @@
 				/></svg
 			>
 		</a>
-		<a title="github" href="https://github.com/LowKey-R" target="_blank" rel="noopener">
+		<a title="github" href="https://github.com/itskeyy" target="_blank" rel="noopener">
 			<svg
 				class="icon"
 				xmlns="http://www.w3.org/2000/svg"
